@@ -1,1 +1,17 @@
+osboxes@osboxes:~$ git clone https://github.com/essentialsofparallelcomputing/EssentialsOfParallelComputing
+
+Cloning into 'EssentialsOfParallelComputing'...
+
+remote: Enumerating objects: 96, done.
+
+remote: Counting objects: 100% (23/23), done.
+
+remote: Compressing objects: 100% (14/14), done.
+
+remote: Total 96 (delta 22), reused 9 (delta 9), pack-reused 73
+
+Receiving objects: 100% (96/96), 18.38 KiB | 190.00 KiB/s, done.
+
+Resolving deltas: 100% (42/42), done.
+
 
