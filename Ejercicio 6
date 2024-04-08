@@ -1,1 +1,17 @@
+-- Pregunta 6.1. ¿Cuáles son las locaciones de git?
+En Git, básicamente hay tres lugares importantes donde ocurren las cosas:
 
+*Working Directory: Es el espacio de trabajo normal en tu computadora. Aquí es donde haces todos tus cambios en los archivos del proyecto.
+
+*Staging Area o Index: Es como una especie de "pista de preparación" donde seleccionas los cambios que quieres guardar. Digamos que es como hacer una lista de reproducción de tus cambios antes de guardarlos oficialmente.
+
+*Git Repository: Este es el "backstage" donde Git realmente hace su magia. Es un lugar oculto en tu proyecto donde Git almacena todos los cambios y la historia del proyecto. Piensa en él como la caja fuerte donde se guardan todos los secretos del proyecto.
+
+
+
+-- Pregunta 6.2. Mencione dos técnicas de vectorización
+Optimización automática en el compilador:
+Los compiladores inteligentes como GCC y Clang pueden hacer un montón de magia en segundo plano. Analizan tu código y lo reescriben de una manera que tu computadora puede entender y hacer más rápido. Es como si tuvieras un asistente invisible que te ayuda a optimizar tu código automáticamente.
+
+Instrucciones SIMD (Single Instruction, Multiple Data):
+Aquí es donde las cosas se vuelven realmente geniales. SIMD es como tener súper poderes en tu procesador. Te permite hacer múltiples cálculos al mismo tiempo, como una especie de fiesta para tu CPU. Esto significa que tu computadora puede hacer más en menos tiempo, lo cual es siempre una buena noticia.
