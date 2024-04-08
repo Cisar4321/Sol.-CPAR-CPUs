@@ -1,1 +1,27 @@
+osboxes@osboxes:~$ ls
+
+Desktop    Downloads                      Music     Public  Templates
+
+Documents  EssentialsOfParallelComputing  Pictures  snap    Videos
+
+osboxes@osboxes:~$ cd EssentialsOfParallelComputing
+
+osboxes@osboxes:~/EssentialsOfParallelComputing$ ls
+
+AppendixB  Chapter13  Chapter17  Chapter5  Chapter9
+
+Chapter10  Chapter14  Chapter2   Chapter6  docker_cleanup.sh
+
+Chapter11  Chapter15  Chapter3   Chapter7  LICENSE
+
+Chapter12  Chapter16  Chapter4   Chapter8  README.md
+
+osboxes@osboxes:~/EssentialsOfParallelComputing$ git submodule update --init Chapter6/
+
+Submodule 'Chapter6' (https://github.com/essentialsofparallelcomputing/Chapter6.git) registered for path 'Chapter6'
+
+Cloning into '/home/osboxes/EssentialsOfParallelComputing/Chapter6'...
+
+Submodule path 'Chapter6': checked out 'cd4ce4130a0775117276ecb16549413ba8c85c3a'
+
 
