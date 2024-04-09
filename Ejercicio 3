@@ -77,5 +77,22 @@ osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec/build$ cmake ..
 -- Build files have been written to: /home/lvs/Desktop/EssentialsOfParallelComputing/Chapter6/autovec/build
 
 
-#Parte c
+-fstrict-aliasing: Habilita el control estricto de aliasing en el código.
+-ftree-vectorize: Habilita la vectorización de bucles usando el árbol de sintaxis abstracta.
+-march=native: Genera código para la arquitectura del procesador en el que se está compilando.
+-mtune=native: Optimiza el código para la arquitectura del procesador en el que se está compilando.
+-fopt-info-vec-optimized: Genera información sobre la vectorización optimizada.
+-mprefer-vector-width=512 (condicional): Especifica el ancho preferido del vector como 512 bytes si la versión del compilador GCC es mayor que 7.4.0.
 
+
+
+#Parte c
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec/build$ nano CMakeLists.txT
+
+-ftree-vectorize: Habilita la vectorización de bucles usando el árbol de sintaxis abstracta.
+-fopt-info-vec-optimized: Genera información sobre la vectorización optimizada.
+
+
+#Parte d
+-mprefer-vector-width=512: 
+-- Esta opción se especifica condicionalmente y establece el ancho preferido del vector como 512 bytes si la versión del compilador GCC es mayor que 7.4.0.
