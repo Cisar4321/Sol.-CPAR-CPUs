@@ -1,3 +1,4 @@
+#Parte a
 Para desactivar explícitamente la vectorización del programa, simplemente puedes eliminar las opciones de vectorización del archivo CMakeLists.txt, 
 como '-ftree-vectorize' y '-fopenmp-simd', o añadir '-fno-tree-vectorize'. Esto asegura que el compilador no aplique técnicas de vectorización durante
 la compilación del código.
