@@ -28,71 +28,60 @@ Dockerfile.vnc          Makefile
 
 
 #Parte b
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6$ cd autovec
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6$ cd mass_sum
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ ls
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ ls
 
-CMakeLists.txt  stream_triad.c  timer.c  timer.h
+CMakeLists.txt  main.c  mass_sum.c  mass_sum.h
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ ls
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ ls
 
-CMakeLists.txt  stream_triad.c  timer.c  timer.h
+CMakeLists.txt  main.c  mass_sum.c  mass_sum.h
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ cd CMakeLists.txt
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ cd CMakeLists.txt
 
 bash: cd: CMakeLists.txt: Not a directory
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ nano CMakeLists.txt
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ nano CMakeLists.txt
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ ls
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ ls
 
-CMakeLists.txt  stream_triad.c  timer.c  timer.h
+CMakeLists.txt  main.c  mass_sum.c  mass_sum.h
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ mkdir build
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ mkdir build
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ ls
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ ls
 
-build  CMakeLists.txt  stream_triad.c  timer.c  timer.h
+build  CMakeLists.txt  main.c  mass_sum.c  mass_sum.h
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec$ cd build/
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum$ cd build/
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec/build$ ls
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ ls
 
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec/build$ cmake ..
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ cmake ..
 
--- The C compiler identification is GNU 11.4.0 -- Compilador de C, versión
--- The CXX compiler identification is GNU 11.4.0 -- Compilador de C++, versión
--- Detecting C complier ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /home/lvs/Desktop/EssentialsOfParallelComputing/Chapter6/autovec/build
+_____________________________________________________________________________________________-
 
 
 -fstrict-aliasing: Habilita el control estricto de aliasing en el código.
--ftree-vectorize: Habilita la vectorización de bucles usando el árbol de sintaxis abstracta.
+-ftree-vectorize: Habilita la vectorización de bucles utilizando el árbol de sintaxis abstracta.
+-fopenmp-simd: Habilita la vectorización de bucles utilizando OpenMP SIMD.
 -march=native: Genera código para la arquitectura del procesador en el que se está compilando.
 -mtune=native: Optimiza el código para la arquitectura del procesador en el que se está compilando.
--fopt-info-vec-optimized: Genera información sobre la vectorización optimizada.
--mprefer-vector-width=512 (condicional): Especifica el ancho preferido del vector como 512 bytes si la versión del compilador GCC es mayor que 7.4.0.
+-ffast-math: Permite el uso de transformaciones de punto flotante que pueden no ser compatibles con el estándar, pero que pueden mejorar el rendimiento.
+-fopt-info-vec-all: Genera información sobre todas las operaciones vectoriales realizadas en el código.
+-fopt-info-loop-all: Genera información sobre todas las optimizaciones aplicadas a los bucles en el código.
 
 
 
 #Parte c
-osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/autovec/build$ nano CMakeLists.txT
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ nano CMakeLists.txT
 
--ftree-vectorize: Habilita la vectorización de bucles usando el árbol de sintaxis abstracta.
--fopt-info-vec-optimized: Genera información sobre la vectorización optimizada.
+-ftree-vectorize: Habilita la vectorización de bucles utilizando el árbol de sintaxis abstracta.
+-fopenmp-simd: Habilita la vectorización de bucles utilizando OpenMP SIMD.
+-fopt-info-vec-all: Genera información sobre todas las operaciones vectoriales realizadas en el código.
 
 
 #Parte d
 -mprefer-vector-width=512: 
--- Esta opción se especifica condicionalmente y establece el ancho preferido del vector como 512 bytes si la versión del compilador GCC es mayor que 7.4.0.
+Esta opción se especifica condicionalmente y establece el ancho preferido del vector como 512 bytes si la versión del compilador GCC es mayor que 7.4.0.
