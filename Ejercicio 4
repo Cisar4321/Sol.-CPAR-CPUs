@@ -1,12 +1,24 @@
 #4.1
+-- En el archivo mass_sum.c
 
+El pragma #pragma omp simd reduction(+:summer) en el archivo de encabezado mass_sum.h indica al compilador que el bucle for posterior 
+puede ser vectorizado utilizando instrucciones SIMD para mejorar la eficiencia del código. Además, especifica una operación de reducción 
+de suma (reduction(+:summer)) sobre la variable summer, lo que significa que cada iteración del bucle contribuirá a la suma total almacenada 
+en summer.
 
 #4.2
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ cmake ..
+-- Debería salirme algunos datos de los compiladores, sin embargo me sale un error que no me deja compilarlo y tampoco instalarlo
+
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ make 
+-- Acá debería salirme los for que fueron vectorizados, sin embargo no me deja compilar la instrucción anterior.
+
 
 
 #4.3
-
-
+-- Al realizar:
+osboxes@osboxes:~/EssentialsOfParallelComputing/Chapter6/mass_sum/build$ make 
+Debe acá que salirme los for que fueron vectorizados.
 
 #4.4
 
